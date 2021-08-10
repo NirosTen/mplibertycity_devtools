@@ -1,3 +1,5 @@
+-- made by nirosten
+
 local open = false
 local mainMenu = RageUI.CreateMenu("Dev Tool", "Liberty city")
 mainMenu.Closed = function()
@@ -26,15 +28,15 @@ function openDevToolMenu()
                         onChecked = function()
                             Checked.east = true
                             for k,v in pairs(eastZone) do
-                                --local min, max = v.extends[1], v.extends[2]
-                                --RequestIpl(v.name)
+                                local min, max = v.extends[1], v.extends[2]
+                                RequestIpl(v.name)
                             end
                         end,
                         onUnChecked = function()
                             Checked.east = false
                             for k,v in pairs(eastZone) do
-                                --local min, max = v.extends[1], v.extends[2]
-                                --RemoveIpl(v.name)
+                                local min, max = v.extends[1], v.extends[2]
+                                RemoveIpl(v.name)
                             end
                         end,
                     })
@@ -43,15 +45,15 @@ function openDevToolMenu()
                         onChecked = function()
                             Checked.jersey = true
                             for k,v in pairs(jerseyZone) do
-                                --local min, max = v.extends[1], v.extends[2]
-                                --RequestIpl(v.name)
+                                local min, max = v.extends[1], v.extends[2]
+                                RequestIpl(v.name)
                             end
                         end,
                         onUnChecked = function()
                             Checked.jersey = false
                             for k,v in pairs(jerseyZone) do
-                                --local min, max = v.extends[1], v.extends[2]
-                                --RemoveIpl(v.name)
+                                local min, max = v.extends[1], v.extends[2]
+                                RemoveIpl(v.name)
                             end
                         end
                     })
@@ -60,15 +62,15 @@ function openDevToolMenu()
                         onChecked = function()
                             Checked.manhat = true
                             for k,v in pairs(manhatZone) do
-                                --local min, max = v.extends[1], v.extends[2]
-                                --RequestIpl(v.name)
+                                local min, max = v.extends[1], v.extends[2]
+                                RequestIpl(v.name)
                             end
                         end,
                         onUnChecked = function()
                             Checked.manhat = false
                             for k,v in pairs(manhatZone) do
-                                --local min, max = v.extends[1], v.extends[2]
-                                --RemoveIpl(v.name)
+                                local min, max = v.extends[1], v.extends[2]
+                                RemoveIpl(v.name)
                             end
                         end
                     })
